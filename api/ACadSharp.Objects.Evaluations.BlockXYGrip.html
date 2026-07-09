@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class BlockActionBasePt | ACadSharp </title>
+      <title>Class BlockXYGrip | ACadSharp </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class BlockActionBasePt | ACadSharp ">
+      <meta name="title" content="Class BlockXYGrip | ACadSharp ">
       
-      
+      <meta name="description" content="Represents a BLOCKXYGRIP object.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/simonedd/ACadSharp/new/master/apiSpec/new?filename=ACadSharp_Objects_Evaluations_BlockActionBasePt.md&amp;value=---%0Auid%3A%20ACadSharp.Objects.Evaluations.BlockActionBasePt%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/simonedd/ACadSharp/new/master/apiSpec/new?filename=ACadSharp_Objects_Evaluations_BlockXYGrip.md&amp;value=---%0Auid%3A%20ACadSharp.Objects.Evaluations.BlockXYGrip%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="ACadSharp.Objects.Evaluations.BlockActionBasePt">
+        <article data-uid="ACadSharp.Objects.Evaluations.BlockXYGrip">
 
 
 
-  <h1 id="ACadSharp_Objects_Evaluations_BlockActionBasePt" data-uid="ACadSharp.Objects.Evaluations.BlockActionBasePt" class="text-break">
-Class BlockActionBasePt  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockActionBasePt.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  <h1 id="ACadSharp_Objects_Evaluations_BlockXYGrip" data-uid="ACadSharp.Objects.Evaluations.BlockXYGrip" class="text-break">
+Class BlockXYGrip  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockXYGrip.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,12 +97,14 @@ Class BlockActionBasePt  <a class="header-action link-secondary" title="View sou
   <dl><dt>Assembly</dt><dd>ACadSharp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a BLOCKXYGRIP object.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[DxfSubClass(&quot;AcDbBlockActionWithBasePt&quot;)]
-public abstract class BlockActionBasePt : BlockAction, IHandledCadObject</code></pre>
+    <pre><code class="lang-csharp hljs">[DxfName(&quot;BLOCKXYGRIP&quot;)]
+[DxfSubClass(&quot;AcDbBlockXYGrip&quot;)]
+public class BlockXYGrip : BlockGrip, IHandledCadObject</code></pre>
   </div>
 
 
@@ -115,8 +117,8 @@ public abstract class BlockActionBasePt : BlockAction, IHandledCadObject</code><
       <div><a class="xref" href="ACadSharp.CadObject.html">CadObject</a></div>
       <div><a class="xref" href="ACadSharp.Objects.Evaluations.EvaluationExpression.html">EvaluationExpression</a></div>
       <div><a class="xref" href="ACadSharp.Objects.Evaluations.BlockElement.html">BlockElement</a></div>
-      <div><a class="xref" href="ACadSharp.Objects.Evaluations.BlockAction.html">BlockAction</a></div>
-      <div><span class="xref">BlockActionBasePt</span></div>
+      <div><a class="xref" href="ACadSharp.Objects.Evaluations.BlockGrip.html">BlockGrip</a></div>
+      <div><span class="xref">BlockXYGrip</span></div>
     </dd>
   </dl>
 
@@ -127,24 +129,24 @@ public abstract class BlockActionBasePt : BlockAction, IHandledCadObject</code><
     </dd>
   </dl>
 
-  <dl class="typelist derived">
-    <dt>Derived</dt>
-    <dd>
-      <div><a class="xref" href="ACadSharp.Objects.Evaluations.BlockRotationAction.html">BlockRotationAction</a></div>
-    </dd>
-  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="ACadSharp.Objects.Evaluations.BlockAction.html#ACadSharp_Objects_Evaluations_BlockAction_Entities">BlockAction.Entities</a>
+      <a class="xref" href="ACadSharp.Objects.Evaluations.BlockGrip.html#ACadSharp_Objects_Evaluations_BlockGrip_Location">BlockGrip.Location</a>
     </div>
     <div>
-      <a class="xref" href="ACadSharp.Objects.Evaluations.BlockAction.html#ACadSharp_Objects_Evaluations_BlockAction_LabelPosition">BlockAction.LabelPosition</a>
+      <a class="xref" href="ACadSharp.Objects.Evaluations.BlockGrip.html#ACadSharp_Objects_Evaluations_BlockGrip_Cycling">BlockGrip.Cycling</a>
     </div>
     <div>
-      <a class="xref" href="ACadSharp.Objects.Evaluations.BlockAction.html#ACadSharp_Objects_Evaluations_BlockAction_Value70">BlockAction.Value70</a>
+      <a class="xref" href="ACadSharp.Objects.Evaluations.BlockGrip.html#ACadSharp_Objects_Evaluations_BlockGrip_ExpressionId1">BlockGrip.ExpressionId1</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.Objects.Evaluations.BlockGrip.html#ACadSharp_Objects_Evaluations_BlockGrip_ExpressionId2">BlockGrip.ExpressionId2</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.Objects.Evaluations.BlockGrip.html#ACadSharp_Objects_Evaluations_BlockGrip_Value93">BlockGrip.Value93</a>
     </div>
     <div>
       <a class="xref" href="ACadSharp.Objects.Evaluations.BlockElement.html#ACadSharp_Objects_Evaluations_BlockElement_ElementName">BlockElement.ElementName</a>
@@ -175,9 +177,6 @@ public abstract class BlockActionBasePt : BlockAction, IHandledCadObject</code><
     </div>
     <div>
       <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_HasDynamicSubclass">CadObject.HasDynamicSubclass</a>
-    </div>
-    <div>
-      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_ObjectName">CadObject.ObjectName</a>
     </div>
     <div>
       <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_Owner">CadObject.Owner</a>
@@ -242,26 +241,29 @@ public abstract class BlockActionBasePt : BlockAction, IHandledCadObject</code><
 
 
 
+  <h2 id="ACadSharp_Objects_Evaluations_BlockXYGrip_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Object name <a class="xref" href="ACadSharp.DxfFileToken.html#ACadSharp_DxfFileToken_ObjectBlockXYGrip">ObjectBlockXYGrip</a> <br>
+Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_DxfSubclassMarker_BlockXYGrip">BlockXYGrip</a></p>
+</div>
 
 
   <h2 class="section" id="properties">Properties
 </h2>
 
 
-  <a id="ACadSharp_Objects_Evaluations_BlockActionBasePt_BasePoint_" data-uid="ACadSharp.Objects.Evaluations.BlockActionBasePt.BasePoint*"></a>
+  <a id="ACadSharp_Objects_Evaluations_BlockXYGrip_ObjectName_" data-uid="ACadSharp.Objects.Evaluations.BlockXYGrip.ObjectName*"></a>
 
-  <h3 id="ACadSharp_Objects_Evaluations_BlockActionBasePt_BasePoint" data-uid="ACadSharp.Objects.Evaluations.BlockActionBasePt.BasePoint">
-  BasePoint
-  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockActionBasePt.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <h3 id="ACadSharp_Objects_Evaluations_BlockXYGrip_ObjectName" data-uid="ACadSharp.Objects.Evaluations.BlockXYGrip.ObjectName">
+  ObjectName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockXYGrip.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets or sets the base point of the action.</p>
+  <div class="markdown level1 summary"><p>The CAD class name of an object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[DxfCodeValue(new int[] { 1011, 1021, 1031 })]
-public XYZ BasePoint { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override string ObjectName { get; }</code></pre>
   </div>
 
 
@@ -270,7 +272,7 @@ public XYZ BasePoint { get; set; }</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="CSMath.XYZ.html">XYZ</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -281,43 +283,11 @@ public XYZ BasePoint { get; set; }</code></pre>
 
 
 
-  <a id="ACadSharp_Objects_Evaluations_BlockActionBasePt_Connections_" data-uid="ACadSharp.Objects.Evaluations.BlockActionBasePt.Connections*"></a>
+  <a id="ACadSharp_Objects_Evaluations_BlockXYGrip_SubclassMarker_" data-uid="ACadSharp.Objects.Evaluations.BlockXYGrip.SubclassMarker*"></a>
 
-  <h3 id="ACadSharp_Objects_Evaluations_BlockActionBasePt_Connections" data-uid="ACadSharp.Objects.Evaluations.BlockActionBasePt.Connections">
-  Connections
-  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockActionBasePt.cs/#L18"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets the list of <a class="xref" href="ACadSharp.Objects.Evaluations.EvalConnection.html">EvalConnection</a> objects that define the connections for this <a class="xref" href="ACadSharp.Objects.Evaluations.BlockActionBasePt.html">BlockActionBasePt</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EvalConnection[] Connections { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="ACadSharp.Objects.Evaluations.EvalConnection.html">EvalConnection</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="ACadSharp_Objects_Evaluations_BlockActionBasePt_SubclassMarker_" data-uid="ACadSharp.Objects.Evaluations.BlockActionBasePt.SubclassMarker*"></a>
-
-  <h3 id="ACadSharp_Objects_Evaluations_BlockActionBasePt_SubclassMarker" data-uid="ACadSharp.Objects.Evaluations.BlockActionBasePt.SubclassMarker">
+  <h3 id="ACadSharp_Objects_Evaluations_BlockXYGrip_SubclassMarker" data-uid="ACadSharp.Objects.Evaluations.BlockXYGrip.SubclassMarker">
   SubclassMarker
-  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockActionBasePt.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockXYGrip.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Object Subclass marker.</p>
@@ -345,75 +315,11 @@ public XYZ BasePoint { get; set; }</code></pre>
 
 
 
-  <a id="ACadSharp_Objects_Evaluations_BlockActionBasePt_Value1012_" data-uid="ACadSharp.Objects.Evaluations.BlockActionBasePt.Value1012*"></a>
-
-  <h3 id="ACadSharp_Objects_Evaluations_BlockActionBasePt_Value1012" data-uid="ACadSharp.Objects.Evaluations.BlockActionBasePt.Value1012">
-  Value1012
-  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockActionBasePt.cs/#L23"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[DxfCodeValue(new int[] { 1012, 1022, 1032 })]
-public XYZ Value1012 { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="CSMath.XYZ.html">XYZ</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="ACadSharp_Objects_Evaluations_BlockActionBasePt_Value280_" data-uid="ACadSharp.Objects.Evaluations.BlockActionBasePt.Value280*"></a>
-
-  <h3 id="ACadSharp_Objects_Evaluations_BlockActionBasePt_Value280" data-uid="ACadSharp.Objects.Evaluations.BlockActionBasePt.Value280">
-  Value280
-  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockActionBasePt.cs/#L26"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[DxfCodeValue(new int[] { 280 })]
-public bool Value280 { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockActionBasePt.cs/#L6" class="edit-link">Edit this page</a>
+          <a href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockXYGrip.cs/#L12" class="edit-link">Edit this page</a>
         </div>
 
 
