@@ -89,7 +89,7 @@
 
 
   <h1 id="ACadSharp_Objects_Evaluations_BlockAlignmentParameter" data-uid="ACadSharp.Objects.Evaluations.BlockAlignmentParameter" class="text-break">
-Class BlockAlignmentParameter  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockAlignmentParameter.cs/#L14"><i class="bi bi-code-slash"></i></a>
+Class BlockAlignmentParameter  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockAlignmentParameter.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -105,7 +105,7 @@ alignment in a dynamic block.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[DxfName(&quot;BLOCKALIGNMENTPARAMETER&quot;)]
 [DxfSubClass(&quot;AcDbBlockAlignmentParameter&quot;)]
-public class BlockAlignmentParameter : Block2PtParameter, IHandledCadObject, INamedCadObject</code></pre>
+public class BlockAlignmentParameter : Block2PtParameter, IHandledCadObject, INamedCadObject, IDxfClassDefined</code></pre>
   </div>
 
 
@@ -130,6 +130,7 @@ public class BlockAlignmentParameter : Block2PtParameter, IHandledCadObject, INa
     <dd>
       <div><a class="xref" href="ACadSharp.IHandledCadObject.html">IHandledCadObject</a></div>
       <div><a class="xref" href="ACadSharp.INamedCadObject.html">INamedCadObject</a></div>
+      <div><a class="xref" href="ACadSharp.Classes.IDxfClassDefined.html">IDxfClassDefined</a></div>
     </dd>
   </dl>
 
@@ -240,7 +241,10 @@ public class BlockAlignmentParameter : Block2PtParameter, IHandledCadObject, INa
       <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_RemoveReactor_ACadSharp_CadObject_">CadObject.RemoveReactor(CadObject)</a>
     </div>
     <div>
-      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateCollection__1___0_ACadSharp_ICadCollection___0__">CadObject.updateCollection&lt;T&gt;(T, ICadCollection&lt;T&gt;)</a>
+      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateCollectionEntry__1___0_System_Action___0__ACadSharp_Objects_Collections_ObjectDictionaryCollection___0__">CadObject.updateCollectionEntry&lt;T&gt;(T, Action&lt;T&gt;, ObjectDictionaryCollection&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="ACadSharp.CadObject.html#ACadSharp_CadObject_updateTableEntry__1___0_System_Action___0__ACadSharp_Tables_Collections_Table___0__">CadObject.updateTableEntry&lt;T&gt;(T, Action&lt;T&gt;, Table&lt;T&gt;)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
@@ -292,7 +296,7 @@ Dxf class name <a class="xref" href="ACadSharp.DxfSubclassMarker.html#ACadSharp_
 
   <h3 id="ACadSharp_Objects_Evaluations_BlockAlignmentParameter_IsPerpendicular" data-uid="ACadSharp.Objects.Evaluations.BlockAlignmentParameter.IsPerpendicular">
   IsPerpendicular
-  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockAlignmentParameter.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockAlignmentParameter.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the perpendicular flag.</p>
@@ -325,7 +329,7 @@ public bool IsPerpendicular { get; }</code></pre>
 
   <h3 id="ACadSharp_Objects_Evaluations_BlockAlignmentParameter_ObjectName" data-uid="ACadSharp.Objects.Evaluations.BlockAlignmentParameter.ObjectName">
   ObjectName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockAlignmentParameter.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockAlignmentParameter.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The CAD class name of an object.</p>
@@ -357,7 +361,7 @@ public bool IsPerpendicular { get; }</code></pre>
 
   <h3 id="ACadSharp_Objects_Evaluations_BlockAlignmentParameter_SubclassMarker" data-uid="ACadSharp.Objects.Evaluations.BlockAlignmentParameter.SubclassMarker">
   SubclassMarker
-  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockAlignmentParameter.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockAlignmentParameter.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Object Subclass marker.</p>
@@ -385,11 +389,48 @@ public bool IsPerpendicular { get; }</code></pre>
 
 
 
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ACadSharp_Objects_Evaluations_BlockAlignmentParameter_GetDxfClass_" data-uid="ACadSharp.Objects.Evaluations.BlockAlignmentParameter.GetDxfClass*"></a>
+
+  <h3 id="ACadSharp_Objects_Evaluations_BlockAlignmentParameter_GetDxfClass" data-uid="ACadSharp.Objects.Evaluations.BlockAlignmentParameter.GetDxfClass">
+  GetDxfClass()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockAlignmentParameter.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="ACadSharp.Classes.DxfClass.html">DxfClass</a> instance associated with this class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DxfClass GetDxfClass()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ACadSharp.Classes.DxfClass.html">DxfClass</a></dt>
+    <dd><p>The <a class="xref" href="ACadSharp.Classes.DxfClass.html">DxfClass</a> instance associated with this class.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockAlignmentParameter.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Objects/Evaluations/BlockAlignmentParameter.cs/#L15" class="edit-link">Edit this page</a>
         </div>
 
 
