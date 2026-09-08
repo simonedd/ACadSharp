@@ -3104,6 +3104,14 @@ internal class DxfObjectsSectionReader : DxfSectionReaderBase
 	{
 		switch (this._reader.Code)
 		{
+			//Common codes, the handle and the owner are needed to link the object with the
+			//objects referencing it, like the viewport or the ACAD_VISUALSTYLE dictionary
+			case 5:
+			case 100:
+			case 102:
+			case 330:
+			case 1001:
+				return false;
 			// Undocumented codes
 			case 176:
 			case 177:
@@ -3112,7 +3120,6 @@ internal class DxfObjectsSectionReader : DxfSectionReaderBase
 			default:
 				//Avoid noise while is not implemented
 				return true;
-				return this.tryAssignCurrentValue(template.CadObject, map.SubClasses[DxfSubclassMarker.VisualStyle]);
 		}
 	}
 
