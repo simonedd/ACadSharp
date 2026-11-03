@@ -5798,12 +5798,6 @@ references:
   commentId: F:ACadSharp.DxfFileToken.TableEntry
   fullName: ACadSharp.DxfFileToken.TableEntry
   nameWithType: DxfFileToken.TableEntry
-- uid: ACadSharp.DxfFileToken.TableGroup
-  name: TableGroup
-  href: api/ACadSharp.DxfFileToken.html#ACadSharp_DxfFileToken_TableGroup
-  commentId: F:ACadSharp.DxfFileToken.TableGroup
-  fullName: ACadSharp.DxfFileToken.TableGroup
-  nameWithType: DxfFileToken.TableGroup
 - uid: ACadSharp.DxfFileToken.TableLayer
   name: TableLayer
   href: api/ACadSharp.DxfFileToken.html#ACadSharp_DxfFileToken_TableLayer
@@ -17349,6 +17343,32 @@ references:
   isSpec: "True"
   fullName: ACadSharp.Entities.ModelerGeometry.GetBoundingBox
   nameWithType: ModelerGeometry.GetBoundingBox
+- uid: ACadSharp.Entities.ModelerGeometry.Guid
+  name: Guid
+  href: api/ACadSharp.Entities.ModelerGeometry.html#ACadSharp_Entities_ModelerGeometry_Guid
+  commentId: P:ACadSharp.Entities.ModelerGeometry.Guid
+  fullName: ACadSharp.Entities.ModelerGeometry.Guid
+  nameWithType: ModelerGeometry.Guid
+- uid: ACadSharp.Entities.ModelerGeometry.Guid*
+  name: Guid
+  href: api/ACadSharp.Entities.ModelerGeometry.html#ACadSharp_Entities_ModelerGeometry_Guid_
+  commentId: Overload:ACadSharp.Entities.ModelerGeometry.Guid
+  isSpec: "True"
+  fullName: ACadSharp.Entities.ModelerGeometry.Guid
+  nameWithType: ModelerGeometry.Guid
+- uid: ACadSharp.Entities.ModelerGeometry.HasWireframeData
+  name: HasWireframeData
+  href: api/ACadSharp.Entities.ModelerGeometry.html#ACadSharp_Entities_ModelerGeometry_HasWireframeData
+  commentId: P:ACadSharp.Entities.ModelerGeometry.HasWireframeData
+  fullName: ACadSharp.Entities.ModelerGeometry.HasWireframeData
+  nameWithType: ModelerGeometry.HasWireframeData
+- uid: ACadSharp.Entities.ModelerGeometry.HasWireframeData*
+  name: HasWireframeData
+  href: api/ACadSharp.Entities.ModelerGeometry.html#ACadSharp_Entities_ModelerGeometry_HasWireframeData_
+  commentId: Overload:ACadSharp.Entities.ModelerGeometry.HasWireframeData
+  isSpec: "True"
+  fullName: ACadSharp.Entities.ModelerGeometry.HasWireframeData
+  nameWithType: ModelerGeometry.HasWireframeData
 - uid: ACadSharp.Entities.ModelerGeometry.IsBinaryAcisData
   name: IsBinaryAcisData
   href: api/ACadSharp.Entities.ModelerGeometry.html#ACadSharp_Entities_ModelerGeometry_IsBinaryAcisData
@@ -18656,6 +18676,19 @@ references:
   isSpec: "True"
   fullName: ACadSharp.Entities.Ole2Frame.ObjectType
   nameWithType: Ole2Frame.ObjectType
+- uid: ACadSharp.Entities.Ole2Frame.OleData
+  name: OleData
+  href: api/ACadSharp.Entities.Ole2Frame.html#ACadSharp_Entities_Ole2Frame_OleData
+  commentId: P:ACadSharp.Entities.Ole2Frame.OleData
+  fullName: ACadSharp.Entities.Ole2Frame.OleData
+  nameWithType: Ole2Frame.OleData
+- uid: ACadSharp.Entities.Ole2Frame.OleData*
+  name: OleData
+  href: api/ACadSharp.Entities.Ole2Frame.html#ACadSharp_Entities_Ole2Frame_OleData_
+  commentId: Overload:ACadSharp.Entities.Ole2Frame.OleData
+  isSpec: "True"
+  fullName: ACadSharp.Entities.Ole2Frame.OleData
+  nameWithType: Ole2Frame.OleData
 - uid: ACadSharp.Entities.Ole2Frame.OleObjectType
   name: OleObjectType
   href: api/ACadSharp.Entities.Ole2Frame.html#ACadSharp_Entities_Ole2Frame_OleObjectType
@@ -33976,6 +34009,19 @@ references:
   isSpec: "True"
   fullName: ACadSharp.IO.CadWriterConfiguration.UpdateDimensionsInModel
   nameWithType: CadWriterConfiguration.UpdateDimensionsInModel
+- uid: ACadSharp.IO.CadWriterConfiguration.WriteACISData
+  name: WriteACISData
+  href: api/ACadSharp.IO.CadWriterConfiguration.html#ACadSharp_IO_CadWriterConfiguration_WriteACISData
+  commentId: P:ACadSharp.IO.CadWriterConfiguration.WriteACISData
+  fullName: ACadSharp.IO.CadWriterConfiguration.WriteACISData
+  nameWithType: CadWriterConfiguration.WriteACISData
+- uid: ACadSharp.IO.CadWriterConfiguration.WriteACISData*
+  name: WriteACISData
+  href: api/ACadSharp.IO.CadWriterConfiguration.html#ACadSharp_IO_CadWriterConfiguration_WriteACISData_
+  commentId: Overload:ACadSharp.IO.CadWriterConfiguration.WriteACISData
+  isSpec: "True"
+  fullName: ACadSharp.IO.CadWriterConfiguration.WriteACISData
+  nameWithType: CadWriterConfiguration.WriteACISData
 - uid: ACadSharp.IO.CadWriterConfiguration.WriteDynamicBlockData
   name: WriteDynamicBlockData
   href: api/ACadSharp.IO.CadWriterConfiguration.html#ACadSharp_IO_CadWriterConfiguration_WriteDynamicBlockData
