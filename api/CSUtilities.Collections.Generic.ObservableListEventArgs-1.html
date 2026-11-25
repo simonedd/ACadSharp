@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class DataValue | ACadSharp </title>
+      <title>Class ObservableListEventArgs&lt;T&gt; | ACadSharp </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DataValue | ACadSharp ">
+      <meta name="title" content="Class ObservableListEventArgs&lt;T&gt; | ACadSharp ">
       
-      
+      <meta name="description" content="Provides data for events from an observable list, including the affected item, its index, and whether the operation is canceled.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/simonedd/ACadSharp/new/master/apiSpec/new?filename=ACadSharp_Prototype1b_DataValue.md&amp;value=---%0Auid%3A%20ACadSharp.Prototype1b.DataValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/DomCR/CSUtilities/new/master/apiSpec/new?filename=CSUtilities_Collections_Generic_ObservableListEventArgs_1.md&amp;value=---%0Auid%3A%20CSUtilities.Collections.Generic.ObservableListEventArgs%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,34 +84,43 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="ACadSharp.Prototype1b.DataValue">
+        <article data-uid="CSUtilities.Collections.Generic.ObservableListEventArgs`1">
 
 
 
-  <h1 id="ACadSharp_Prototype1b_DataValue" data-uid="ACadSharp.Prototype1b.DataValue" class="text-break">
-Class DataValue  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Prototype1b/DataValue.cs/#L3"><i class="bi bi-code-slash"></i></a>
+  <h1 id="CSUtilities_Collections_Generic_ObservableListEventArgs_1" data-uid="CSUtilities.Collections.Generic.ObservableListEventArgs`1" class="text-break">
+Class ObservableListEventArgs&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/DomCR/CSUtilities/blob/master/CSUtilities/Collections/Generic/ObservableListEventArgs.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="ACadSharp.html">ACadSharp</a>.<a class="xref" href="ACadSharp.Prototype1b.html">Prototype1b</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><span class="xref">CSUtilities</span>.<span class="xref">Collections</span>.<a class="xref" href="CSUtilities.Collections.Generic.html">Generic</a></dd></dl>
   <dl><dt>Assembly</dt><dd>ACadSharp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Provides data for events from an observable list, including the affected item, its index, and whether the operation
+is canceled.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DataValue</code></pre>
+    <pre><code class="lang-csharp hljs">public class ObservableListEventArgs&lt;T&gt; : EventArgs</code></pre>
   </div>
 
 
 
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of item in the observable list.</p>
+</dd>
+  </dl>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">DataValue</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></div>
+      <div><span class="xref">ObservableListEventArgs&lt;T&gt;</span></div>
     </dd>
   </dl>
 
@@ -120,6 +129,9 @@ Class DataValue  <a class="header-action link-secondary" title="View source" hre
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs.empty">EventArgs.Empty</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -153,24 +165,69 @@ Class DataValue  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h2 id="CSUtilities_Collections_Generic_ObservableListEventArgs_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Set the cancellation flag in an event handler to request that the associated list operation not
+proceed.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="CSUtilities_Collections_Generic_ObservableListEventArgs_1__ctor_" data-uid="CSUtilities.Collections.Generic.ObservableListEventArgs`1.#ctor*"></a>
+
+  <h3 id="CSUtilities_Collections_Generic_ObservableListEventArgs_1__ctor__0_System_Int32_" data-uid="CSUtilities.Collections.Generic.ObservableListEventArgs`1.#ctor(`0,System.Int32)">
+  ObservableListEventArgs(T, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DomCR/CSUtilities/blob/master/CSUtilities/Collections/Generic/ObservableListEventArgs.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ObservableListEventArgs{T} class with the specified item and index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableListEventArgs(T item, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd><p>Item associated with the list event.</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Zero-based index of the item in the list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <h2 class="section" id="properties">Properties
 </h2>
 
 
-  <a id="ACadSharp_Prototype1b_DataValue_BlobReference_" data-uid="ACadSharp.Prototype1b.DataValue.BlobReference*"></a>
+  <a id="CSUtilities_Collections_Generic_ObservableListEventArgs_1_Cancel_" data-uid="CSUtilities.Collections.Generic.ObservableListEventArgs`1.Cancel*"></a>
 
-  <h3 id="ACadSharp_Prototype1b_DataValue_BlobReference" data-uid="ACadSharp.Prototype1b.DataValue.BlobReference">
-  BlobReference
-  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Prototype1b/DataValue.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <h3 id="CSUtilities_Collections_Generic_ObservableListEventArgs_1_Cancel" data-uid="CSUtilities.Collections.Generic.ObservableListEventArgs`1.Cancel">
+  Cancel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DomCR/CSUtilities/blob/master/CSUtilities/Collections/Generic/ObservableListEventArgs.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether to cancel the operation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DataBlobReference BlobReference { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Cancel { get; set; }</code></pre>
   </div>
 
 
@@ -179,7 +236,7 @@ Class DataValue  <a class="header-action link-secondary" title="View source" hre
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="ACadSharp.Prototype1b.DataBlobReference.html">DataBlobReference</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -190,18 +247,19 @@ Class DataValue  <a class="header-action link-secondary" title="View source" hre
 
 
 
-  <a id="ACadSharp_Prototype1b_DataValue_Data_" data-uid="ACadSharp.Prototype1b.DataValue.Data*"></a>
+  <a id="CSUtilities_Collections_Generic_ObservableListEventArgs_1_Index_" data-uid="CSUtilities.Collections.Generic.ObservableListEventArgs`1.Index*"></a>
 
-  <h3 id="ACadSharp_Prototype1b_DataValue_Data" data-uid="ACadSharp.Prototype1b.DataValue.Data">
-  Data
-  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Prototype1b/DataValue.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  <h3 id="CSUtilities_Collections_Generic_ObservableListEventArgs_1_Index" data-uid="CSUtilities.Collections.Generic.ObservableListEventArgs`1.Index">
+  Index
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DomCR/CSUtilities/blob/master/CSUtilities/Collections/Generic/ObservableListEventArgs.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the index.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public byte[] Data { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int Index { get; }</code></pre>
   </div>
 
 
@@ -210,7 +268,7 @@ Class DataValue  <a class="header-action link-secondary" title="View source" hre
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -221,18 +279,19 @@ Class DataValue  <a class="header-action link-secondary" title="View source" hre
 
 
 
-  <a id="ACadSharp_Prototype1b_DataValue_DataSize_" data-uid="ACadSharp.Prototype1b.DataValue.DataSize*"></a>
+  <a id="CSUtilities_Collections_Generic_ObservableListEventArgs_1_Item_" data-uid="CSUtilities.Collections.Generic.ObservableListEventArgs`1.Item*"></a>
 
-  <h3 id="ACadSharp_Prototype1b_DataValue_DataSize" data-uid="ACadSharp.Prototype1b.DataValue.DataSize">
-  DataSize
-  <a class="header-action link-secondary" title="View source" href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Prototype1b/DataValue.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  <h3 id="CSUtilities_Collections_Generic_ObservableListEventArgs_1_Item" data-uid="CSUtilities.Collections.Generic.ObservableListEventArgs`1.Item">
+  Item
+  <a class="header-action link-secondary" title="View source" href="https://github.com/DomCR/CSUtilities/blob/master/CSUtilities/Collections/Generic/ObservableListEventArgs.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the item.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public uint DataSize { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public T Item { get; }</code></pre>
   </div>
 
 
@@ -241,7 +300,7 @@ Class DataValue  <a class="header-action link-secondary" title="View source" hre
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dt><span class="xref">T</span></dt>
     <dd></dd>
   </dl>
 
@@ -256,7 +315,7 @@ Class DataValue  <a class="header-action link-secondary" title="View source" hre
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/simonedd/ACadSharp/blob/master/src/ACadSharp/Prototype1b/DataValue.cs/#L3" class="edit-link">Edit this page</a>
+          <a href="https://github.com/DomCR/CSUtilities/blob/master/CSUtilities/Collections/Generic/ObservableListEventArgs.cs/#L12" class="edit-link">Edit this page</a>
         </div>
 
 
